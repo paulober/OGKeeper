@@ -1,0 +1,9 @@
+{
+    "keeping": [
+        {
+            "og": "N:\\TestEnv\\olddir\\myimportance.txt",
+            "newfile": "N:\\TestEnv\\newdir\\myimportance.txt"
+        }
+    ],
+    "countdownInMinutesNotFloatingpoint": 2 
+}

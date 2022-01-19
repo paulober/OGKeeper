@@ -1,0 +1,9 @@
+[Unit]
+Description=OgKeeper
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/ogkeeper /etc/ogkeeper/config.json
+
+[Install]
+WantedBy=multi-user.target
