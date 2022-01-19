@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import json
+import os
 import shutil
 import sys
 import time
@@ -16,6 +17,7 @@ def main(config_file="/etc/ogkeeper/config.json"):
         with open(i["og"], 'rb') as fsrc, open(i["newfile"], 'wb+') as fdst:
             fdst.truncate()
             shutil.copyfileobj(fsrc, fdst)
+    os.system(str(config["serviceRestartCmd"]))
 
 if __name__ == '__main__':
     assert len(sys.argv) > 1

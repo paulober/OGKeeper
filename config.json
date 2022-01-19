@@ -1,9 +1,10 @@
 {
     "keeping": [
         {
-            "og": "N:\\TestEnv\\olddir\\myimportance.txt",
-            "newfile": "N:\\TestEnv\\newdir\\myimportance.txt"
+            "og": "/etc/frp/frpc.ini.bak",
+            "newfile": "/etc/frp/frpc.ini"
         }
     ],
-    "countdownInMinutesNotFloatingpoint": 2 
+    "countdownInMinutesNotFloatingpoint": 2,
+    "serviceRestartCmd": "sudo service frpc restart"
 }
